@@ -1,7 +1,11 @@
 package uz.pdp.exam5modul_g9_narzullaev_bekzod.service;
 
+
+
+
 import uz.pdp.exam5modul_g9_narzullaev_bekzod.db.Db;
 import uz.pdp.exam5modul_g9_narzullaev_bekzod.entity.User;
+
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserService {
+
     static String role;
 
     public static int add(User user) {
@@ -49,7 +54,7 @@ public class UserService {
         Connection connection=Db.getConnection();
         try {
             PreparedStatement ps=connection.prepareStatement("update users set  username=?,password=?,fullname=? where id=?");
-            // ps.setString(1,user.getRole());
+           // ps.setString(1,user.getRole());
             ps.setString(1,user.getUsername());
             ps.setString(2,user.getPassword());
             ps.setString(3,user.getFullName());
@@ -138,13 +143,13 @@ public class UserService {
             preparedStatement.setInt(1, user_id);
             resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                role = resultSet.getString(1);
+                 role = resultSet.getString(1);
             }
             connection.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return check;
+             return check;
     }
 
     public static String getRoleName() {
@@ -152,14 +157,14 @@ public class UserService {
     }
 
     public static int size() {
-        int size = 0;
-        Connection connection=Db.getConnection();
+   int size = 0;
+        Connection connection= Db.getConnection();
 
         try {
             PreparedStatement ps=connection.prepareStatement("select * from users");
             ResultSet rs=ps.executeQuery();
             while (rs.next()) {
-                size++;
+              size++;
                 connection.close();
 
 
@@ -171,3 +176,8 @@ public class UserService {
 
     }
 }
+
+
+
+
+

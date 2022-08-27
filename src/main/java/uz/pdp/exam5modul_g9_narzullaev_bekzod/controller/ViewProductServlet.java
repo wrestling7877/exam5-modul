@@ -8,7 +8,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import uz.pdp.exam5modul_g9_narzullaev_bekzod.entity.Product;
 import uz.pdp.exam5modul_g9_narzullaev_bekzod.service.ProductService;
 
-
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
@@ -26,7 +25,6 @@ public class ViewProductServlet extends HttpServlet {
         }
 
 
-      ;
         List<Product>productList = ProductService.getAllProduct(page);
         int size = ProductService.size();
         req.setAttribute("productList", productList);

@@ -5,7 +5,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import uz.pdp.examtask.service.ProductService;
+import uz.pdp.exam5modul_g9_narzullaev_bekzod.service.ProductService;
+
 
 import java.io.IOException;
 

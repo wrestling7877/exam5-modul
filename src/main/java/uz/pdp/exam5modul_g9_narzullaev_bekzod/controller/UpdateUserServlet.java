@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import uz.pdp.exam5modul_g9_narzullaev_bekzod.entity.User;
 import uz.pdp.exam5modul_g9_narzullaev_bekzod.service.UserService;
 
+
 import java.io.IOException;
 
 @WebServlet("/update-user")

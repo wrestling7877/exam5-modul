@@ -11,11 +11,10 @@ import uz.pdp.exam5modul_g9_narzullaev_bekzod.entity.Product;
 import uz.pdp.exam5modul_g9_narzullaev_bekzod.service.CategoryService;
 import uz.pdp.exam5modul_g9_narzullaev_bekzod.service.ProductService;
 
-
 import java.io.File;
 import java.io.IOException;
 
-import static uz.pdp.exam5modul_g9_narzullaev_bekzod.util.Util.UPLOAD_DIRECTORY;
+import static uz.pdp.exam5modul_g9_narzullaev_bekzod.utils.Util.UPLOAD_DIRECTORY;
 
 
 @WebServlet("/update-product")

@@ -1,4 +1,4 @@
-package uz.pdp.exam5modul_g9_narzullaev_bekzod.util;
+package uz.pdp.exam5modul_g9_narzullaev_bekzod.utils;
 
 public class Util {
 

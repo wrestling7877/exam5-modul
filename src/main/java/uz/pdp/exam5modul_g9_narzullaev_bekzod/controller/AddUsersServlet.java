@@ -5,8 +5,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import uz.pdp.examtask.entity.User;
-import uz.pdp.examtask.service.UserService;
+import uz.pdp.exam5modul_g9_narzullaev_bekzod.entity.User;
+import uz.pdp.exam5modul_g9_narzullaev_bekzod.service.UserService;
 
 import java.io.IOException;
 import java.io.PrintWriter;

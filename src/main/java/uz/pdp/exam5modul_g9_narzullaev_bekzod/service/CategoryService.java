@@ -1,7 +1,7 @@
 package uz.pdp.exam5modul_g9_narzullaev_bekzod.service;
 
-import uz.pdp.examtask.db.Db;
-import uz.pdp.examtask.entity.Category;
+import uz.pdp.exam5modul_g9_narzullaev_bekzod.db.Db;
+import uz.pdp.exam5modul_g9_narzullaev_bekzod.entity.Category;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

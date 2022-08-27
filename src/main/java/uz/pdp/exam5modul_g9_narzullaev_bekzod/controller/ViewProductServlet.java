@@ -1,4 +1,4 @@
-package uz.pdp.exam5modul_g9_narzullaev_bekzod.admin;
+package uz.pdp.exam5modul_g9_narzullaev_bekzod.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -8,16 +8,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import uz.pdp.exam5modul_g9_narzullaev_bekzod.entity.Product;
 import uz.pdp.exam5modul_g9_narzullaev_bekzod.service.ProductService;
 
+
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
-@WebServlet("/admin-page")
-public class Admin extends HttpServlet {
+@WebServlet("/view-Product")
+public class ViewProductServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
 
         String pageStr = req.getParameter("page");
         int page = 1;
@@ -26,6 +26,7 @@ public class Admin extends HttpServlet {
         }
 
 
+      ;
         List<Product>productList = ProductService.getAllProduct(page);
         int size = ProductService.size();
         req.setAttribute("productList", productList);
@@ -38,7 +39,7 @@ public class Admin extends HttpServlet {
             req.setAttribute("prev", page);
         }
 
-        if ((page ) > size) {
+        if ((page * 3) > size) {
             req.setAttribute("page", page);
         } else {
             req.setAttribute("page", page + 1);
@@ -46,9 +47,6 @@ public class Admin extends HttpServlet {
 
         List<Integer>pageList = Collections.singletonList(page);
         req.setAttribute("pageList", pageList);
-        req.getRequestDispatcher("update-delete-product.jsp").forward(req, resp);
-        }
-
-
+        req.getRequestDispatcher("homePage.jsp").forward(req, resp);
     }
-
+}

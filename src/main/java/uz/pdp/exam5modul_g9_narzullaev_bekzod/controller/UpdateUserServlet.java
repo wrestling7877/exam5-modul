@@ -40,7 +40,6 @@ public class UpdateUserServlet extends HttpServlet {
                 .username(username)
                 .password(password)
                 .fullName(fullName)
-
                 .build();
 
 

@@ -173,6 +173,7 @@
 
     <a href="/showUser?page=<%=prev%>">  <button class="button button2">Previous</button> </a>
 
+
     <a href="/showUser?page=${1}"> ${1}</a>
     <a href="/showUser?page=${2}"> ${2}</a>
 

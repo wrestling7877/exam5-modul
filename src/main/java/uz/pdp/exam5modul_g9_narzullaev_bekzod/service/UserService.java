@@ -54,7 +54,7 @@ public class UserService {
         Connection connection=Db.getConnection();
         try {
             PreparedStatement ps=connection.prepareStatement("update users set  username=?,password=?,fullname=? where id=?");
-           // ps.setString(1,user.getRole());
+
             ps.setString(1,user.getUsername());
             ps.setString(2,user.getPassword());
             ps.setString(3,user.getFullName());

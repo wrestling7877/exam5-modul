@@ -25,7 +25,7 @@
     <a href="/admin-page">  Product</a>
 <br>
 
-    <a href="/add-product">Category</a>
+
 <br>
         <a href="/showUser" >Users</a>
 <br>
